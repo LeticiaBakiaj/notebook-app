@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+  
+}
+
+header {
+  background: linear-gradient(to bottom, #beb2d6, #0298d5);
+  padding: 2em 0;
+  margin-bottom: 3em;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+}
+
+@media only screen and (max-width: 50em) {
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+main {
+  display: flex;
+  padding: 0 1em;
+  top: 30px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 40em) {
+  main {
+    flex-direction: column-reverse;
+  }
+}
+
+aside {
+  width: 15em;
+}
+
+@media only screen and (max-width: 40em) {
+  aside {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+
+.characters {
+  flex-grow: 1;
+  margin-left: 1000px;
+  margin-top: 150px;
+}
+
+.character {
+  display: flex;
+  margin-bottom: 1em;
+ 
+}
+
+
+.search label {
+  position: absolute;
+  top: -10px;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  margin-left: -100px;
+}
+
+.search input {
+  position: absolute;
+  top: 10px;
+  margin-right: 10px;
+  margin-left: -100px;
+  width: 30%;
+  font-size: 20px;
+  background: none;
+  padding: .8em 1em;
+  border: solid 3px #5F4B8B;
+  outline: none;
+  border-radius: .4em;
+}
+
+.search input:focus {
+  border: solid 3px #5e1dec;
+  box-shadow: 0 0 6px #5e1dec;
+}
+
+
